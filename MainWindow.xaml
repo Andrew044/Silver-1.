@@ -1,0 +1,30 @@
+﻿<Window x:Class="SilverWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SilverWPF"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="266.4" Width="432" Background="IndianRed" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,66.6,36.8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Логин:" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Name="tbLogin"></TextBox>
+        <Label Grid.Row="3" Grid.Column="0" Content="Пароль:" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <PasswordBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Name="tbPassword"></PasswordBox>
+        <Button Grid.Row="4" Grid.Column="1" Name="btEnter" Content="Войти" Click="btEnter_Click" Grid.ColumnSpan="2" Margin="9.6,29.6,131.6,9.8" Grid.RowSpan="2"></Button>
+    </Grid>
+</Window>
